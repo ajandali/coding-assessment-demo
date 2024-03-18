@@ -1,0 +1,3 @@
+creation_rules:
+ - path_regex: k8s/mysql/*.*.yaml
+   kms: arn:aws:kms:us-east-1:471112938308:key/52bbb568-d501-49f0-9679-76bb4036374d
