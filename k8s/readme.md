@@ -3,6 +3,7 @@
 - Follow the following instructions to deploy your first app to kubernetes eks cluster
   * create the necessary files (storage.yaml, secrets.yaml, deployment.yaml)
   * run the following command on each of the files to deploy them `kubectl apply -f <file.yaml>`
+  * to deploy the encrypted secrets you have to decrypt them while applying them to the kubernetes cluster by running this command `sops -d mysql-secret.enc.yaml| kubectl apply -f -`
   * [Optional] run `"kubectl get secrets" or "kubectl get pvc" or "kubectl get pods"` to check if the previous step was successful
  
 ## Secure your secrets 
